@@ -1,0 +1,102 @@
+# 2nd chapter
+
+-> installed mysql
+- by using i.
+	   ii. 
+-> Enter into mysql bash
+- by using --> sudo mysql-u root -p
+
+-> database is created 
+- by using --> create database blog_flask_app;
+-> database is used
+- by using --> use blog_flask_app;
+
+-> table was created
+-by using --> create table users(id int(11) auto_increment primary key, name varchar (100), email varchar(100), username varchar (100), password varchar(100), register_date timestamp default current_timestamp);
+
+-> flask-mysqldb (module used to communicate with mysql) was installed
+	- by using --> pip3 install flask-mysqldb
+
+-> Flask-WTF (module for form validation) was installed
+	- by using --> pip3 install Flask-WTF
+	
+
+-> passlib (module used to hash passwords) was installed
+	- by using --> pip3 install passlib
+	
+-> flash (used for flash messages), redirect (to handle redirection), request, url_for, session, logging was imported from flask 
+
+
+-> MYSQL was imported from flask_mysqldb
+
+
+-> Form, Stringfield, TextAreaField, PasswordField, validators were imported from wtforms
+
+
+-> sha256_crypt was imported from passlib.hash
+
+
+-> RegisterForm class was made by referring WTForms documentation to create registration form
+
+
+-> register route was made i.e ('/register')
+-> register.html file was made under templates folder
+
+
+-> _formhelpers.html was made under includes folder
+
+
+-> mysql config were mentioned and mysql was initialised in app.py file
+
+
+-> variables viz. name, email, username and password were mentioned under register function under if statement
+-> cursor was created, executed, commited and closed
+
+
+-> flash message was initialised
+
+
+-> _messages.html file was made under partial folder
+-> _messages.html file was included in layout.html file
+
+
+-> register button was added to navbar (by mentioning it into _navbar.html file)
+
+
+-> secret_key was mentioned in app.py file
+
+
+# chapter 3
+
+
+-> login route was created
+-> login.html file was made
+-> login button was added into navbar right
+
+alert messages was added into _message.html file
+
+
+-> dashbord was made
+-> dashboard.html file was made
+
+
+-> wrapper was added under login route to check whether user is really logged in or not
+
+
+# chapter 4
+
+
+-> Article Form Class was created
+-> add_article route was created
+-> add_article.html file was created under templates folder
+
+
+-> add article button were added in dashboard.html file
+
+
+-> ckeditor was added in layout.html file
+
+
+
+-> Register and Login buttons were added to home page
+
